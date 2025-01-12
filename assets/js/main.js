@@ -37,6 +37,19 @@
   /*--------------------------------------------------------------
     Scripts initialization
   --------------------------------------------------------------*/
+
+  const videoPlayer = document.getElementById("videoPlayer");
+
+  function toggleVideoPlay() {
+    if (videoPlayer.paused) {
+      videoPlayer.play();
+    } else {
+      videoPlayer.pause();
+    }
+  }
+
+
+
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, SplitText);
 
   // Utility function to check element existence

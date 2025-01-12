@@ -1688,6 +1688,15 @@ kbd {
   border-radius: 50%;
 }
 
+#playButton {
+  display: flex;
+}
+
+#playButton.hidden {
+  display: none;
+}
+
+
 @keyframes heart-beat {
   0%, 20%, 40%, 60%, 80%, 100% {
     transform: scale(1.1);
@@ -3977,6 +3986,13 @@ kbd {
 /*--------------------------------------------------------------
 18. Feature Content
 ----------------------------------------------------------------*/
+#fullscreen-video {
+  
+  width: 100%; /* Cover the full width */
+  height: 100%; /* Cover the full height */
+  object-fit: cover; /* Ensure the video covers the entire area while maintaining aspect ratio */
+  z-index: -1; /* Place it behind other content */
+}
 .feature-content {
   display: flex;
   justify-content: space-between;
@@ -4130,14 +4146,17 @@ kbd {
   }
 }
 .testmonial-content .testmonial-slider .testmonial-img {
+  background: #888787;
   max-width: 450px;
   width: 100%;
   min-height: 400px;
+  padding:.1rem;
   overflow-x: hidden;
 }
 .testmonial-content .testmonial-slider .testmonial-img img {
   width: 100%;
   height: 100%;
+  border-radius: 1.2rem;
   -o-object-fit: cover;
      object-fit: cover;
   background-repeat: no-repeat;
@@ -4892,6 +4911,88 @@ kbd {
   gap: 100px;
 }
 
+
+.video-home {
+  position: relative;
+  text-align: center;
+}
+.rounded-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.video-modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+}
+.video-home {
+   position: relative;
+   text-align: center;
+ }
+ .rounded-btn {
+   width: 50px;
+   height: 50px;
+   background-color: #fff;
+   border-radius: 50%;
+ }
+ .video-modal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1000;
+ }
+ .video-modal-content {
+   position: relative;
+   width: 80%;
+   max-width: 800px;
+ }
+ .video-modal-content video {
+   width: 100%;
+   height: auto;
+ }
+ .close {
+   position: absolute;
+   top: 10px;
+   right: 20px;
+   font-size: 30px;
+   color: #fff;
+   cursor: pointer;
+ }
+.video-modal-content video {
+  width: 100%;
+  height: auto;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
 .blog-card.style-1 {
   display: flex;
   justify-content: space-between;
@@ -5101,7 +5202,7 @@ kbd {
   23. Accordion
 ----------------------------------------------------------------*/
 .ak-accordion-tab {
-  display: none;
+  display:flex;
 }
 
 .ak-accordion {
