@@ -308,6 +308,7 @@
           <img src="assets/img/close-up-woman-working-laptop.jpg" alt="Contact Image" />
         </div>
         <div class="contact-form">
+          
           <div>
             <h5 class="contact-title">
               Ready to take control of your financial future? Our team of
@@ -316,28 +317,38 @@
             </h5>
             <div class="ak-height-40 ak-height-lg-30"></div>
           </div>
-          <form>
+          <form id="emailForm">
             <div class="form-inputs">
               <div class="type_1">
-                <label for="fullname" class="form-label">Title</label>
+                <label for="Title" class="form-label">Title</label>
                 <input
                   type="text"
-                  name="fullname"
-                  id="fullname"
+                  name="Title"
+                  id="Title"
                   class="csame"
-                  placeholder="Write your name here..."
+                  placeholder="Write your Title here..."
+                />
+              </div>
+              <div class="type_1">
+                <label for="FullName" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  name="FullName"
+                  id="FullName"
+                  class="csame"
+                  placeholder="Write your Full Name here..."
                 />
               </div>
             </div>
             <div class="form-inputs">
               <div class="type_1">
-                <label for="YourPhone" class="form-label">Full Name</label>
+                <label for="Surname" class="form-label">Surname</label>
                 <input
-                  type="tel"
-                  name="phone"
-                  id="YourPhone"
+                  type="text"
+                  name="Surname"
+                  id="Surname"
                   class="csame"
-                  placeholder="Write your phone number here..."
+                  placeholder="Write your Surname..."
                 />
               </div>
               <div class="type_1">
@@ -354,63 +365,122 @@
             </div>
             <div class="form-inputs">
               <div class="type_1">
-                <label for="websiteInput" class="form-label">Marital Status</label>
-                <select name="website" id="websiteInput" class="csame">
-                  <option
-                    value=""
-                    disabled
-                    selected
-                    hidden
-                    class="select-placeholder"
-                  >
-                    Write your Marital Status..
-                  </option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                </select>
+                <label for="MaritalStatus" class="form-label">Marital Status</label>
+                <input
+                type="etext"
+                name="MaritalStatus"
+                id="MaritalStatus"
+                class="csame"
+                placeholder="Write your Marital Status here..."
+              />
               </div>
               <div class="type_1">
-                <label for="budgetInput" class="form-label">Contact Details</label>
-                <select name="budget" id="budgetInput" class="csame">
-                  <option
-                    value=""
-                    disabled
-                    selected
-                    hidden
-                    class="select-placeholder"
-                  >
-                  Contact Details
-                  </option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                </select>
+                <label class="form-label">Gender</label>
+                <div class="gender-options">
+                  <input type="radio" id="male" name="gender" value="Male">
+                  <label for="male">Male</label>
+                
+                  <input type="radio" id="female" name="gender" value="Female">
+                  <label for="female">Female</label>
+              
+                </div>
               </div>
-              <div class="type_1">
-                <label for="budgetInput" class="form-label">Address</label>
-                <select name="budget" id="budgetInput" class="csame">
-                  <option
-                    value=""
-                    disabled
-                    selected
-                    hidden
-                    class="select-placeholder"
-                  >
-                    What is your budget...
-                  </option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                </select>
-              </div>
+              
             </div>
-            <div class="form-textarea">
+            <div class="form-inputs">
               <div class="type_1">
-                <label for="textareaInput" class="form-label"
-                  >Description</label
+                <label for="websiteInput" class="form-label">Date of Birth	</label>
+                <input
+                type="text"
+                name="Date of Birth	"
+                id="Date of Birth	"
+                class="csame"
+                placeholder="Write your Date of Birth here..."
+              />
+              </div>
+              <div class="type_1">
+                <label for="Preferred" class="form-label">Preferred Contact Method & Time	</label>
+                <input
+                type="text"
+                name="Preferred"
+                id="Preferred"
+                class="csame"
+                placeholder="Write your Timing here..."
+              />
+              </div>
+              
+            </div>
+            <div class="form-inputs">
+              <div class="type_1">
+                <label for="websiteInput" class="form-label">Telephone (home)</label>
+                <input
+                type="tel"
+                name="phone"
+                id="YourPhone"
+                class="csame"
+                placeholder="Write your Phone Home here..."
+              />
+              </div>
+              <div class="type_1">
+                <label for="Work" class="form-label">Telephone (Work)</label>
+                <input
+                type="tel"
+                name="Work"
+                id="Work"
+                class="csame"
+                placeholder="Write your Phone Work here..."
+              />
+              </div>
+              
+            </div>
+            <div class="form-inputs">
+              <div class="type_1">
+                <label for="Mobile" class="form-label">Mobile</label>
+                <input
+                type="tel"
+                name="Mobile"
+                id="Mobile"
+                class="csame"
+                placeholder="Write your Mobile number here..."
+              />
+              </div>
+              <div class="type_1">
+                <label for="Fax" class="form-label">Fax</label>
+                <input
+                type="tel"
+                name="Fax"
+                id="Fax"
+                class="csame"
+                placeholder="Write your Fax here..."
+              />
+              </div>
+              
+            </div>
+            <div class="form-inputs">
+            
+              <div class="type_1">
+                <label for="Address" class="form-label"
+                  >Address</label
                 >
                 <textarea
-                  name="description"
+                  name="Address"
                   rows="3"
-                  id="textareaInput"
+                  id="Address"
+                  class="csame"
+                  placeholder="Write description details..."
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-inputs">
+           
+              <div class="type_1">
+                <label for="ContactDetails" class="form-label"
+                  >Contact Details	</label
+                >
+                <textarea
+                  name="ContactDetails"
+                  rows="3"
+                  id="ContactDetails"
                   class="csame"
                   placeholder="Write description details..."
                 ></textarea>
@@ -763,6 +833,62 @@
     <script src="assets/js/plugins/splittext.js"></script>
     <script src="assets/js/plugins/scrolltigger.js"></script>
     <script src="assets/js/plugins/scrolltoplugins.js"></script>
+    <script>
+      document.getElementById('emailForm').addEventListener('submit', async function (event) {
+          event.preventDefault(); 
+
+          const Title = document.getElementById('Title').value;
+          const FirstName = document.getElementById('FirstName').value;
+          const Surname = document.getElementById('Surname').value;
+          const DateofBirth = document.getElementById('DateofBirth').value;
+          const Gender = document.querySelector('input[name="gender"]:checked').value;
+          const MaritalStatus = document.getElementById('MaritalStatus').value;
+          const ContactDetails = document.getElementById('ContactDetails').value;
+          const Address = document.getElementById('Address').value;
+          const Telephonehome = document.getElementById('Telephonehome').value;
+          const Telephonework = document.getElementById('Telephonework').value;
+          const Mobile = document.getElementById('Mobile').value;
+          const Fax = document.getElementById('Fax').value;
+          const Email = document.getElementById('Email').value;
+          const PreferredContactMethodTime = document.getElementById('PreferredContactMethodTime').value;
+
+            const formData = {
+              Title,
+              FirstName,
+              Surname,
+              DateofBirth,
+              Gender,
+              MaritalStatus,
+              ContactDetails,
+              Address,
+              Telephonehome,
+              Telephonework,
+              Mobile,
+              Fax,
+              Email,
+              PreferredContactMethodTime
+            };
+
+
+          try {
+              const response = await fetch('http://localhost:3000/send-email', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify(formData),
+              });
+
+              if (response.ok) {
+                  alert('Email sent successfully!');
+              } else {
+                  alert('Failed to send email.');
+              }
+          } catch (error) {
+              alert('Error: ' + error.message);
+          }
+      });
+  </script>
 
     <script src="assets/js/main.js"></script>
   </body>
