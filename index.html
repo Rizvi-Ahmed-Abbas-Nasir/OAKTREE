@@ -9,7 +9,7 @@
     <!-- Favicon Icon -->
     <link rel="icon" href="assets/img/favicon.svg" />
     <!-- Site Title -->
-    <title>Fingcon - Finance Advisory Html Template</title>
+    <title>OakTree</title>
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -1992,18 +1992,28 @@ In 2008, I took my passion further by becoming a Certified Financial Planner. Th
             <div class="footer-nav">
               <div class="new-letter-email">
                 <div class="new-letter">
-                  <h5 class="title">Get in Touch</h5>
+                  <h5 class="title">Ask me Question</h5>
                   <p class="desp">
-                    As we enter the second quarter of the year, global markets
-                    continue to show resilience.
+                    At OakTree, we understand that everyone has unique aspirations, dreams, and objectives. 
                   </p>
                 </div>
-                <form class="email-content">
+                <form id="contactForm" class="email-content">
                   <div class="email-input-btn">
                     <input
+                    id="email"
                       class="email"
                       type="text"
-                      name="fristname"
+                      name="email"
+                      placeholder="Email."
+                    />
+                
+                  </div>
+                  <div style="padding-top: 1rem;" class="email-input-btn">
+                    <input
+                    id="question"
+                      class="email"
+                      type="text"
+                      name="question"
                       placeholder="Ask me a Question..."
                     />
                     <button type="submit" class="common-btn style-2 type-2">
@@ -2176,6 +2186,39 @@ In 2008, I took my passion further by becoming a Certified Financial Planner. Th
     <script src="assets/js/plugins/splittext.js"></script>
     <script src="assets/js/plugins/scrolltigger.js"></script>
     <script src="assets/js/plugins/scrolltoplugins.js"></script>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', async function (event) {
+          event.preventDefault(); 
+
+          const email = document.getElementById('email').value;
+          const question = document.getElementById('question').value;
+        
+
+          const formData = {
+            email,
+            question,
+          
+          };
+
+          try {
+              const response = await fetch('https://oaktreebackend.vercel.app/SendASK', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify(formData),
+              });
+
+              if (response.ok) {
+                  alert('Email sent successfully!');
+              } else {
+                  alert('Failed to send email.');
+              }
+          } catch (error) {
+              alert('Error: ' + error.message);
+          }
+      });
+  </script>
 
     <script src="assets/js/main.js"></script>
   </body>
