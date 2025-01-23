@@ -304,9 +304,7 @@
     <div class="ak-height-125 ak-height-lg-80"></div>
     <div class="container-fluid px-md-0">
       <div class="contact-form-content">
-        <div class="contact-form-img">
-          <img src="assets/img/close-up-woman-working-laptop.jpg" alt="Contact Image" />
-        </div>
+       
         <form id="contactForm">
 
         <div class="contact-form">
@@ -326,7 +324,7 @@
                 type="text"
                 name="FullName"
                 id="FullName"
-                class="csame"
+                class="csame1"
                 placeholder="Write your Full Name here..."
                 required
               />
@@ -337,7 +335,7 @@
                 type="email"
                 name="Email"
                 id="Email"
-                class="csame"
+                class="csame1"
                 placeholder="Enter your Email Address here..."
                 required
               />
@@ -350,19 +348,21 @@
                 type="tel"
                 name="PhoneNumber"
                 id="PhoneNumber"
-                class="csame"
+                class="csame1"
                 placeholder="Enter your Phone Number here..."
               />
             </div>
             <div class="type_1">
-              <label for="Message" class="form-label">Your Message (Optional)</label>
-              <textarea
-                name="Message"
-                id="Message"
-                class="csame"
-                placeholder="Share your key concerns or goals here..."
-              ></textarea>
+              <label for="DOB" class="form-label">Date of Birth</label>
+              <input
+                type="date"
+                name="DOB"
+                id="DOB"
+                class="csame1"
+                placeholder="Select your Date of Birth"
+              />
             </div>
+          
           </div>
           <div class="form-inputs">
             <div class="type_1">
@@ -376,38 +376,6 @@
               />
             </div>
             <div class="type_1">
-              <label for="FinancialGoal" class="form-label">Your Financial Goal/Concern (Optional)</label>
-              <textarea
-                name="FinancialGoal"
-                id="FinancialGoal"
-                class="csame"
-                placeholder="Share your investment objectives or questions here..."
-              ></textarea>
-            </div>
-          </div>
-          <div class="form-inputs">
-            <div class="type_1">
-              <label for="PostRetirementGoals" class="form-label">Your Post-Retirement Goals (Optional)</label>
-              <textarea
-                name="PostRetirementGoals"
-                id="PostRetirementGoals"
-                class="csame"
-                placeholder="Share your aspirations or financial concerns here..."
-              ></textarea>
-            </div>
-          </div>
-          <div class="form-inputs">
-            <div class="type_1">
-              <label for="DOB" class="form-label">Date of Birth</label>
-              <input
-                type="date"
-                name="DOB"
-                id="DOB"
-                class="csame"
-                placeholder="Select your Date of Birth"
-              />
-            </div>
-            <div class="type_1">
               <label for="ContactTime" class="form-label">Preferred Contact Method & Time</label>
               <input
                 type="text"
@@ -417,6 +385,7 @@
                 placeholder="Write your Preferred Contact Method & Time here..."
               />
             </div>
+           
           </div>
         
           <div class="form-inputs">
@@ -430,8 +399,6 @@
                 placeholder="Write your Address here..."
               ></textarea>
             </div>
-          </div>
-          <div class="form-inputs">
             <div class="type_1">
               <label for="ContactDetails" class="form-label">Contact Details</label>
               <textarea
@@ -442,6 +409,44 @@
                 placeholder="Write your Contact Details here..."
               ></textarea>
             </div>
+          </div>
+        
+          <div class="form-inputs">
+            <div class="type_1">
+              <label for="Message" class="form-label">Your Message (Optional)</label>
+              <textarea
+                name="Message"
+                id="Message"
+                class="csame"
+                placeholder="Share your key concerns or goals here..."
+              ></textarea>
+            </div>
+          </div>
+          <div class="REQ-section">
+            <h3>Services: Financial Planning for</h3>
+            <div class="REQ-button-group">
+              <button type="button" class="REQ-custom-button" data-value=" Financial Planning for Busy Professionals">
+                + Busy Professionals
+              </button>
+              <button type="button" class="REQ-custom-button" data-value="Financial Planning for Families">
+                + Families
+              </button>
+              <button type="button" class="REQ-custom-button" data-value=" How Oaktree Helps Young Parents">
+                + Young Parents
+              </button>
+              <button type="button" class="REQ-custom-button" data-value="How Oaktree Helps Women in Financial Planning">
+                + Womens
+              </button>
+              <button type="button" class="REQ-custom-button" data-value="Oaktree NRI Services: Helping You Invest in India with Confidence">
+                + NRI
+              </button>
+              <button type="button" class="REQ-custom-button" data-value="How Oaktree Helps Post-Retirement">
+                + Post-Retirement
+              </button>
+             
+            </div>
+            <input type="hidden" id="selectedItemsInput" name="selectedItems" />
+
           </div>
           <div class="ak-height-40 ak-height-lg-40"></div>
           <button type="submit" class="common-btn border-0">

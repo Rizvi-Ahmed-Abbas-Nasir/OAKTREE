@@ -5413,6 +5413,58 @@ kbd {
 /*--------------------------------------------------------------
 25. Pricing Calculator
 ----------------------------------------------------------------*/
+
+.csame input{
+  border-radius:0rem;
+  padding:.5rem .9rem;
+  }
+
+
+
+.REQ-section {
+  margin-bottom: 30px;
+}
+
+.REQ-section h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.REQ-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.REQ-custom-button {
+  padding: 10px 20px;
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5rem;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.REQ-custom-button:hover {
+  background-color: black;
+  color: white;
+}
+.REQ-custom-button.selected {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+
+.csame {
+border-radius: 2rem;
+padding:.5rem .9rem;
+}
+
 .package-content {
   display: flex;
   gap: 30px;
@@ -5547,23 +5599,20 @@ kbd {
 }
 
 .contact-form-content {
+  width:100%;
   display: flex;
   gap: 100px;
   background-color: #fff;
 }
-.contact-form-content .contact-form-img {
-  max-width: 860px;
-}
-.contact-form-content .contact-form-img img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
+
+
 .contact-form-content .contact-form {
-  max-width: 645px;
+
+  width: 100%;
   align-self: center;
-  padding: 15px;
+  padding-bottom: 5rem;
+  padding-left:20rem;
+  padding-right:20rem;
 }
 
 .contact-form .contact-title {
