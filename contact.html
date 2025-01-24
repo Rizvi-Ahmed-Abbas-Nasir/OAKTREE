@@ -19,14 +19,27 @@
     <!-- Preloader -->
     <div id="preloader" class="preloader">
       <div class="txt-loading">
-        <div class="preloader-text">
-          <img class="logo-icon" src="assets/img/OakTree.jpg" alt="logo" />
-        </div>
+        <div class="spinner"></div>
+
+        <style>
+        .spinner {
+           width: 56px;
+           height: 56px;
+           border-radius: 50%;
+           background: conic-gradient(#0000 10%, green);
+           -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+           animation: spinner-zp9dbg 1s infinite linear;
+        }
+        
+        @keyframes spinner-zp9dbg {
+           to {
+              transform: rotate(1turn);
+           }
+        }
+        </style>
         <div class="loading-border-content">
-          <div class="loading-percent">0%</div>
-          <div class="loading-border-show">
-            <div class="loading-border"></div>
-          </div>
+          <div class="loading-percent"></div>
+         
         </div>
       </div>
     </div>
@@ -489,13 +502,7 @@
 
     <!-- Start Google Map -->
     <div class="ak-google-map ak-bg">
-      <iframe
-        class="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96652.27317354927!2d-74.33557928194516!3d40.79756494697628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a82f1352d0dd%3A0x81d4f72c4435aab5!2sTroy+Meadows+Wetlands!5e0!3m2!1sen!2sbd!4v1563075599994!5m2!1sen!2sbd"
-        allowfullscreen
-        loading="lazy"
-      >
-      </iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6243616170177!2d72.88801881154906!3d19.124128250383666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c80451ea9f1d%3A0xbf589404e9cae381!2spowai%20plaza!5e0!3m2!1sen!2sin!4v1737739581661!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!-- End Google Map -->
 

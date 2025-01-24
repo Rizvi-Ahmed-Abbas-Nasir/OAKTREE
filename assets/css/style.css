@@ -4096,8 +4096,23 @@ kbd {
   height:100%;
   max-width: 317px;
 }
-.feature-icon{
-  width: 5rem;
+.feature-icon1 {
+  box-shadow: 0 8px 9px rgba(72, 255, 0, 0.363); /* Example values */
+  width: 7rem;
+  border-radius: 1rem;
+  padding:1rem 1rem;
+}
+
+
+.feature-icon {
+  
+  width: 7rem;
+  border-radius: 1rem;
+  padding:1rem 1rem;
+}
+
+.feature-card .feature-icon1 {
+  margin-bottom: 28px;
 }
 .feature-card .feature-icon {
   margin-bottom: 28px;
@@ -5461,7 +5476,7 @@ kbd {
 
 
 .csame {
-border-radius: 2rem;
+border-radius: 1.5rem;
 padding:.5rem .9rem;
 }
 
