@@ -818,6 +818,34 @@
     <script src="assets/js/plugins/scrolltigger.js"></script>
     <script src="assets/js/plugins/scrolltoplugins.js"></script>
     <script>
+      let customButtons = document.querySelectorAll('.REQ-custom-button');
+const selectedItemsInput = document.getElementById('selected-items');
+let selectedItems = []; 
+const buttons = document.querySelectorAll(".REQ-custom-button");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      button.classList.toggle("selected");
+    });
+  });
+
+customButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const value = button.getAttribute('data-value');
+
+    const isAlreadySelected = selectedItems.includes(value);
+
+    if (!isAlreadySelected) {
+      selectedItems.push(value);
+      console.log(`Added: ${value}`);
+    } else {
+      selectedItems = selectedItems.filter((item) => item !== value);
+      console.log(`Removed: ${value}`);
+    }
+
+    selectedItemsInput.value = JSON.stringify(selectedItems);
+  });
+});
       document.getElementById('contactForm').addEventListener('submit', async function (event) {
           event.preventDefault(); 
 
@@ -830,6 +858,8 @@
           const contactTime = document.getElementById('ContactTime').value;
           const address = document.getElementById('Address').value;
           const contactDetails = document.getElementById('ContactDetails').value;
+          const items = JSON.stringify(selectedItems);
+
 
           const formData = {
             fullName,
@@ -841,6 +871,7 @@
             contactTime,
             address,
             contactDetails,
+            items
           };
 
           try {
